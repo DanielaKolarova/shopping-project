@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("./assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: #cccccc;
+}
+
+.header, #menu, #content, .footer {
+    position:fixed;
+    height:100%;
+    width:100%;
+    top: 0px;
+    left: 0px;
+    font-size: 18px; 
+    font-weight: 500; 
+    line-height: 32px; 
+    margin: 0 0 24px;
+  }
+  
+  .header {
+    height:100px;
+    z-index:9999;
+  }
+  
+  #menu {
+    width:150px;
+    padding:100px 0 60px; /* account for header, footer */
+    z-index:9997;
+  }
+
+  .menu_content {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  #content {
+    padding:120px 0 60px 150px; /* account for header, menu, footer */
+    z-index:9996;
+  }
+  
+  .footer {
+    height:60px;
+    top:inherit;
+    bottom:0;
+    z-index:9998;
+  }
+
+  .button {
+    font-size: 14px; 
+    font-weight: 500; 
+    line-height: 32px; 
+    text-decoration: none;
+    background-color: #eeeeeef1;
+    color: #333333;
+    padding: 4px 12px 4px 12px;
+    margin: 4px 12px 4px 12px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+  }
+
+  .button a { 
+    color: #333333;
+  }
