@@ -1,0 +1,23 @@
+button {
+    background: none;
+    border: none;
+    color: rgba(165, 164, 164, 0.74);
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    color: rgba(218, 218, 218, 0.74);
+}
+
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #555;
+  }
+  
+  .header .logout {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }

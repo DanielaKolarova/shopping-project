@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from './user.model';
+import { User } from '../shared/models/user.model';
 import { UsersService } from './users.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class UsersComponent implements OnInit {
   constructor(private userService: UsersService) { }
 
   ngOnInit(): void {
-    this.users = this.userService.users();
+    this.users = this.userService.getUsers();
   }
 
 }
